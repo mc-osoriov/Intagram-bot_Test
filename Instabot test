@@ -1,24 +1,24 @@
 from instabot import Bot 
 
 my_bot = Bot()
-my_bot.login(username = 'hue_eggy', password = '')
+my_bot.login(username = '******', password = '******') #put real data where * are placed
 
-#Información general
-user_id = my_bot.get_user_id_from_username('Detreukickz')
+#General Information
+user_id = my_bot.get_user_id_from_username('*****')
 user_info = my_bot.get_user_info(user_id)
 print (user_info['biography'])
 
-#Seguir a los seguidores del usuario
-#my_bot.follow_followers('Detreukickz')
+#follow user´s followers
+#my_bot.follow_followers('*******')
 
-#Descargar fotos del usuario
-#pics = my_bot.get_total_user_medias('Detreukickz')
+#Download pics
+#pics = my_bot.get_total_user_medias('******')
 #my_bot.download_photos(pics, folder = 'PROYECTO_FINAL_PROGRAMACION', save_description = True)
 
-#Obtener sus seguidores 
-followers = my_bot.get_user_followers('Detreukickz')
+#Get followers 
+followers = my_bot.get_user_followers('*******')
 print (followers)
 
-#Obtener sus ususarios seguidos 
-following = my_bot.get_user_following('Detreukickz')
+#Get followings
+following = my_bot.get_user_following('*******')
 print (following)
